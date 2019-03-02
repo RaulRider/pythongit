@@ -68,7 +68,10 @@ to make a symbolic link hello.py to /usr/bin under the name hello, then run it b
 
 Note that this mainly should be done for complete, compiled programs, if you have a script that you made and use frequently, then it might be a good idea to put it somewhere in your home directory and put a link to it in /usr/bin. 
 
-If you want a playground, a good idea is to invoke mkdir ~/.local/bin and then put scripts in there. To make ~/.local/bin content executable the same way /usr/bin does type $PATH = $PATH:~/local/bin 
+If you want a playground, a good idea is to invoke mkdir ~/.local/bin and then put scripts in there. 
+
+To make ~/.local/bin content executable the same way /usr/bin does type $PATH = $PATH:~/local/bin 
+
 (you can add this line to your shell rc file, for example ~/.bashrc).
 
 
