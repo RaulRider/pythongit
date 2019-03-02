@@ -52,7 +52,24 @@ stdout, stderr = process.communicate()
 Popen.wait() #If you want to wait for the program to finish you can call Popen.wait()
 print stdout
 ```
+#MAKE PYTHON CODE EXECUTABLE
+```
+#! /usr/bin/python3
+print('Hello, world!')
+```
 
+Type chmod a+x hello.py to tell Linux that it is an executable program.
+Type ./hello.py to run your program!
+```
+In addition, you can also use 
+ln -s hello.py /usr/bin/hello
+```
+to make a symbolic link hello.py to /usr/bin under the name hello, then run it by simply executing hello.
+
+Note that this mainly should be done for complete, compiled programs, if you have a script that you made and use frequently, then it might be a good idea to put it somewhere in your home directory and put a link to it in /usr/bin. 
+
+If you want a playground, a good idea is to invoke mkdir ~/.local/bin and then put scripts in there. To make ~/.local/bin content executable the same way /usr/bin does type $PATH = $PATH:~/local/bin 
+(you can add this line to your shell rc file, for example ~/.bashrc).
 
 
 
