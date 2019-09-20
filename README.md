@@ -1,6 +1,6 @@
 # pythongit
 
-[Go to Chapter 01](Chapter01.md)
+[Go to chapter 01](chapter01.md)
 
 
 
