@@ -1,6 +1,6 @@
 # CHAPTER 02
 
-'''
+```
 import numpy as np
 import matplotlib.pyplot as plt
 def mandelbrot( h,w, maxit=20 ):
@@ -20,4 +20,4 @@ def mandelbrot( h,w, maxit=20 ):
     return divtime
 plt.imshow(mandelbrot(400,400))
 plt.show()
-'''
+```
