@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 print('- Modo interactivo :', matplotlib.pyplot.isinteractive())
 
 import os
-my_path = os.path.abspath(__file__) 
+my_path = os.path.abspath(__file__)
 print('- Directorio de uso:', my_path)
 
 
@@ -24,7 +24,7 @@ print('- Directorio de uso:', my_path)
 
 # definicion de la función a dibjuar
 dim = 20
-datos = np.random.random((dim,dim)) 
+datos = np.random.random((dim,dim))
 print(datos)
 datos = datos * 2
 # Fin
@@ -32,15 +32,11 @@ datos = datos * 2
 figura1 = plt.figure(1) # se define un grafico por si hay varios
 
 # figura1.savefig(my_path + '/Sub_Directory/graph.png')
-plt.xlabel('time')          
-plt.ylabel('volts')        
-plt.title('A simple plot from RAUL')   
+plt.xlabel('time')
+plt.ylabel('volts')
+plt.title('A simple plot from RAUL')
 
 plt.imshow(datos) # grafico a mostrar
 
-figura1.savefig('Grafico_Raul_1')
+figura1.savefig('graph-raul')
 plt.show() #should be the last line of your script
-
-
-
-
